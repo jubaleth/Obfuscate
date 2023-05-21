@@ -46,6 +46,7 @@ std::cout << obfuscated_string << std::endl;
 	#define AY_OBFUSCATE_DEFAULT_KEY ay::generate_key(AY_LINE)
 #endif
 
+
 namespace ay
 {
 	using size_type = unsigned long long;
@@ -120,7 +121,7 @@ namespace ay
 	// Handles decryption and re-encryption of an encrypted string at runtime
 	template <size_type N, key_type KEY>
 	class obfuscated_data
-	{
+    {
 	public:
 		obfuscated_data(const obfuscator<N, KEY>& obfuscator)
 		{
